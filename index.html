@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanam Ahmed, PhD – Software Engineering and Business Process Management</title>
+<meta name="description" content="Sanam Ahmed, PhD in Computer Science, University of the Punjab. Research in business process management, software engineering and trustworthy AI agent frameworks. Seeking postdoctoral positions.">
+<meta property="og:title" content="Sanam Ahmed, PhD – Software Engineering and Business Process Management">
+<meta property="og:description" content="Research in business process management, software engineering and trustworthy AI agent frameworks. Seeking postdoctoral positions internationally.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7F8; --surface:#FFFFFF; --ink:#14222B; --ink-2:#33454F; --muted:#4A5C66;
+  --line:#D5DCE0; --accent:#0E5A66; --accent-dark:#08414B; --footer:#14222B; --on-footer:#F5F7F8; --link-footer:#BFE3EA;
+  --serif:'Newsreader',Georgia,serif; --sans:'Public Sans',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1A21; --surface:#16252E; --ink:#EAF0F3; --ink-2:#C3CFD6; --muted:#9DB0BB;
+    --line:#2A3C47; --accent:#6CC4D2; --accent-dark:#9ADAE5; --footer:#0A1217;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-text-size-adjust:100%}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-dark);text-decoration:underline}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+h1,h2,h3,p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-left:32px;padding-right:32px}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:10px 16px;z-index:10}
+.skip:focus{left:8px;top:8px}
+
+header.top{background:var(--surface);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 32px;padding-top:12px;padding-bottom:12px}
+.brand{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--ink)}
+nav{display:flex;flex-wrap:wrap;gap:0 24px;font-size:15px;font-weight:500}
+nav a{color:var(--ink);padding:12px 0}
+
+.hero{background:var(--surface);border-bottom:1px solid var(--line)}
+.hero .wrap{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:72px;padding-bottom:64px}
+.hero-text{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.status{font-size:15px;font-weight:600;color:var(--accent)}
+h1{font-family:var(--serif);font-size:clamp(36px,6vw,56px);line-height:1.08;font-weight:600;letter-spacing:-0.01em}
+.lede{font-size:20px;line-height:1.55;color:var(--ink-2);max-width:640px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;font-weight:600;border-radius:4px;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.primary:hover{background:var(--accent-dark);color:#fff;text-decoration:none}
+.btn.ghost{color:var(--accent)}
+.photo{flex:1 1 240px;display:flex;justify-content:center}
+.photo img,.photo .ph{width:240px;height:300px;border-radius:4px;border:1px solid var(--line);object-fit:cover}
+.photo .ph{background:var(--line);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;color:var(--muted);font-size:14px}
+
+section.block{padding-top:56px;padding-bottom:24px}
+section.block:last-of-type{padding-bottom:72px}
+.row{display:flex;flex-wrap:wrap;gap:24px 64px}
+.row>.label{flex:1 1 220px;min-width:0}
+.row>.body{flex:3 1 520px;min-width:0}
+h2{font-family:var(--serif);font-size:32px;font-weight:600;line-height:1.2}
+.label p{margin-top:8px;font-size:15px}
+.body>p.intro{font-size:18px;color:var(--ink-2);max-width:68ch;margin-bottom:24px}
+.cards{display:flex;flex-wrap:wrap;gap:16px}
+.card{flex:1 1 260px;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:20px 22px}
+.card h3{font-size:17px;font-weight:600;margin-bottom:6px}
+.card p{font-size:15px;color:var(--ink-2)}
+
+.pub{display:flex;flex-wrap:wrap;gap:8px 24px;padding:20px 0;border-top:1px solid var(--line)}
+.pub:last-child{border-bottom:1px solid var(--line)}
+.pub .yr{flex:0 0 72px;font-weight:600;color:var(--accent)}
+.pub .txt{flex:1 1 360px;min-width:0}
+.pub h3{font-size:17px;font-weight:600}
+.pub .meta{font-size:15px;color:var(--ink-2);margin-top:2px}
+.pub .note{font-size:15px;color:var(--ink-2);margin-top:6px}
+.pub .links{font-size:15px;margin-top:6px}
+
+.job{display:flex;flex-wrap:wrap;gap:6px 24px;margin-bottom:28px}
+.job .when{flex:0 0 160px;font-size:15px;color:var(--muted)}
+.job .what{flex:1 1 360px;min-width:0}
+.job h3{font-size:18px;font-weight:600}
+.job p{font-size:15px;color:var(--ink-2);margin-top:4px}
+
+footer.contact{background:var(--footer);color:var(--on-footer)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:32px 64px;align-items:center;padding-top:72px;padding-bottom:72px}
+footer .msg{flex:2 1 420px;min-width:0}
+footer h2{font-size:36px;margin-bottom:12px;color:var(--on-footer)}
+footer .msg p{font-size:17px;color:#D5DCE0}
+footer .links{flex:1 1 280px;display:flex;flex-direction:column;font-size:16px}
+footer .links a{color:var(--link-footer);padding:8px 0}
+footer .links a.mail{color:#fff;font-weight:600}
+footer a:focus-visible{outline-color:#fff}
+.legal{font-size:14px;color:#9DB0BB;padding:0 0 28px}
+.legal .wrap{padding-top:0;padding-bottom:0}
+@media (max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .hero .wrap{padding-top:48px;padding-bottom:40px;gap:32px}
+  .lede{font-size:18px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#research">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Sanam Ahmed, PhD</a>
+    <nav aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="status">Seeking postdoctoral positions internationally</p>
+      <h1>Sanam Ahmed, PhD in Computer Science</h1>
+      <p class="lede">I study how software and business processes can be built, tested and trusted. My work covers business process management, software engineering, and trustworthy AI agent frameworks, backed by 12 years of university teaching and 3 years as a software engineer.</p>
+      <div class="btns">
+        <a class="btn primary" href="cv.pdf">Download CV (PDF)</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="research">
+  <div class="wrap row">
+    <div class="label"><h2>Research</h2></div>
+    <div class="body">
+      <p class="intro">My research connects what people say about a system with how that system is designed and tested. I build machine learning approaches, benchmarks and tools that software teams and process analysts can use. I am looking for a postdoctoral group working on process-aware, testable and trustworthy intelligent systems.</p>
+      <div class="cards">
+        <div class="card"><h3>Business process management</h3><p>Linking end-user feedback to process model elements with word embeddings and machine learning. I released six process models, six feedback corpora and gold-standard benchmarks.</p></div>
+        <div class="card"><h3>Software engineering for IoT</h3><p>Code quality, testing and data accuracy of wearable apps, including LLM-generated unit tests and real-world use cases with Fitbit devices.</p></div>
+        <div class="card"><h3>Trustworthy AI agent frameworks</h3><p>My current direction: agent frameworks whose behaviour is specified, testable and auditable, drawing on process modelling and software testing.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="publications">
+  <div class="wrap row">
+    <div class="label">
+      <h2>Selected publications</h2>
+      <p><a href="https://scholar.google.com/citations?user=PbV0zgwAAAAJ&amp;hl=en">Full list on Google Scholar</a></p>
+      <p><a href="https://www.kaggle.com/datasets/sanamahmed/revmapdatasets">Benchmark datasets on Kaggle</a></p>
+    </div>
+    <div class="body">
+      <article class="pub">
+        <div class="yr">2024</div>
+        <div class="txt">
+          <h3>An Exploratory Study on Code Quality, Testing, Data Accuracy, and Practical Use Cases of IoT Wearables</h3>
+          <p class="meta">J. B. Minani, Y. El Fellah, <strong>S. Ahmed</strong>, F. Sabir, N. Moha, Y.-G. Guéhéneuc · <em>7th Conference on Cloud and Internet of Things (CIoT)</em>, IEEE, pp. 1–5</p>
+          <p class="note">Analysed 16 Fitbit repositories, generated unit tests with ChatGPT-4 at 100% coverage, compared data across three Fitbit models, and built two IoT use cases.</p>
+          <p class="links"><a href="https://zenodo.org/records/11621998">Artifacts (Zenodo)</a> · <a href="https://github.com/baptiste2k8/IoTWearable">Code</a></p>
+        </div>
+      </article>
+      <article class="pub">
+        <div class="yr">2022</div>
+        <div class="txt">
+          <h3>Augmenting Business Process Model Elements With End-User Feedback</h3>
+          <p class="meta"><strong>S. Ahmed</strong>, K. Shahzad · <em>IEEE Access</em>, vol. 10, pp. 115635–115651</p>
+          <p class="note">AugProMo, a machine learning approach evaluated in 2,880 experiments across four word embeddings, four balancing techniques and six classifiers.</p>
+          <p class="links"><a href="https://doi.org/10.1109/ACCESS.2022.3216418">DOI</a> · <a href="https://www.kaggle.com/datasets/sanamahmed/revmapdatasets">Datasets</a></p>
+        </div>
+      </article>
+      <article class="pub">
+        <div class="yr">2020</div>
+        <div class="txt">
+          <h3>Mapping Textual Feedback to Process Model Elements</h3>
+          <p class="meta"><strong>S. Ahmed</strong>, A. Mustansir · <em>35th IEEE/ACM Int. Conf. on Automated Software Engineering Workshops</em>, pp. 131–137</p>
+        </div>
+      </article>
+      <article class="pub">
+        <div class="yr">2018</div>
+        <div class="txt">
+          <h3>Using BPM Frameworks for Identifying Customer Feedback About Process Performance</h3>
+          <p class="meta"><strong>S. Ahmad</strong>, S. I. Muzaffar, K. Shahzad, K. Malik · <em>CAiSE 2018 Workshops</em>, LNBIP 316, Springer, pp. 55–69</p>
+          <p class="links"><a href="https://doi.org/10.1007/978-3-319-92898-2_5">DOI</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="experience">
+  <div class="wrap row">
+    <div class="label"><h2>Experience</h2></div>
+    <div class="body">
+      <div class="job">
+        <div class="when">June 2024 – present</div>
+        <div class="what">
+          <h3>Assistant Professor (ad hoc appointment), Department of Software Engineering, University of the Punjab</h3>
+          <p>Teaching and research in Lahore, Pakistan, with a focus on business process management, software engineering and AI.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">2014 – 2024<br>12 years of teaching since 2014</div>
+        <div class="what">
+          <h3>Lecturer, Department of Software Engineering, University of the Punjab</h3>
+          <p>Taught seven courses, from programming and databases to AI, and carried out research alongside teaching.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">2010 – 2014<br>3 years of experience</div>
+        <div class="what">
+          <h3>Software Engineer, payment processing company (Silicon Valley)</h3>
+          <p>Software development for payment processing systems. This industry background shapes my focus on testable, dependable software.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">July 2019 – 2020</div>
+        <div class="what">
+          <h3>Researcher, ProRevMapper project (Higher Education Commission, NRPU)</h3>
+          <p>Summarising large volumes of customer reviews and mapping them to business process models, so organisations can find process gaps and prioritise improvements. Advisor: Dr. Muhammad Khurram Shahzad.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">June 2024</div>
+        <div class="what">
+          <h3>PhD in Computer Science, University of the Punjab</h3>
+          <p>Research on business process management, natural language processing, mobile app review analysis, and machine and deep learning. Earlier degrees: M.Phil. in Computer Science (2014, big data analytics with MapReduce, Hadoop and Spark) and Bachelor of Information Technology (2010), both from the University of the Punjab.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="teaching">
+  <div class="wrap row">
+    <div class="label"><h2>Teaching and skills</h2></div>
+    <div class="body">
+      <div class="cards">
+        <div class="card" style="flex-basis:300px">
+          <h3>Teaching</h3>
+          <p>Object Oriented Programming · Web Engineering · Software Engineering · Business Process Engineering · Artificial Intelligence · Database Systems · Cloud Computing · Application of Information and Communication Technologies</p>
+          <p style="margin-top:12px">Courses taught at the University of the Punjab, most recently Business Process Engineering, Software Engineering and Artificial Intelligence.</p>
+        </div>
+        <div class="card" style="flex-basis:300px">
+          <h3>Technical skills</h3>
+          <p>Python, PyTorch, Keras, scikit-learn, Gensim, R, C, C++, Java, JavaScript, Node.js, HTML5, PHP, SQL, MySQL, Neo4j. Word embeddings (Word2Vec, FastText, GloVe, BERT), BPMN and Camunda, SonarQube, Codacy, LLM-assisted test generation.</p>
+        </div>
+        <div class="card" style="flex-basis:300px">
+          <h3>Service and awards</h3>
+          <p>Degree Supervisor, BS Software Engineering (2026 – present). Member, Board of Studies (2023 – 2025). Member, Placement and Alumni Office (2023 – 2025). Judge, AI-powered web hackathon at PUCon (2025). HEC travel grant to present at CAiSE 2018 in Estonia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="msg">
+      <h2>Open to postdoctoral opportunities</h2>
+      <p>Available from Spring 2027. I am glad to discuss fellowships, funded projects and visiting positions in Canada, the United States, the Gulf region and Europe.</p>
+    </div>
+    <div class="links">
+      <a class="mail" href="mailto:sanam.ahmad@pucit.edu.pk">sanam.ahmad@pucit.edu.pk</a>
+      <a href="https://scholar.google.com/citations?user=PbV0zgwAAAAJ&amp;hl=en">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/sanam-ahmed-11452527">LinkedIn</a>
+      <a href="https://github.com/SanamAhmed">GitHub</a>
+    </div>
+  </div>
+  <div class="legal"><div class="wrap">© 2026 Sanam Ahmed</div></div>
+</footer>
+</body>
+</html>
